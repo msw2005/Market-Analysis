@@ -1,0 +1,43 @@
+import yfinance as yf
+
+# Download data
+ticker = yf.Ticker("AAPL")
+
+# Get financial data
+balancesheet = ticker.balancesheet
+incomestatement = ticker.financials
+info = ticker.info
+
+# Print balancesheet data
+for key in balancesheet.index:
+    print(key)
+
+# Calculate ROI (Return on Investment) using EBITDA
+'''This is the return on investment, calculated as EBITDA divided by total assets. 
+It's a measure of the profitability of the company relative to its total assets. In this case, the ROI is approximately 36.90%, which means that the company has a return of 36.90% on its assets.
+'''
+total_assets = balancesheet.loc["Total Assets"].iloc[0]
+roi = (info['ebitda'] / total_assets) * 100
+
+# Calculate ROE (Return on Equity)
+'''This is the return on equity, calculated as net income divided by stockholders' equity. 
+It's a measure of the profitability of the company relative to its equity. In this case, the ROE is approximately 156.08%, which means that the company has a return of 156.08% on its equity.
+'''
+net_income = incomestatement.loc["Net Income"].iloc[0]
+roe = (net_income / balancesheet.loc["Stockholders Equity"].iloc[0]) * 100
+
+# Calculate CAGR (Compound Annual Growth Rate)
+'''CAGR: This is the compound annual growth rate, calculated based on the total assets at the beginning and end of the period.
+It's a measure of the annual growth rate of the company's assets. In this case, the CAGR is approximately 2.14%, which means that the company's assets have grown at an annual rate of 2.14%.'''
+years = len(balancesheet.columns)
+beginning_value = balancesheet.loc["Total Assets"].iloc[-1]
+ending_value = balancesheet.loc["Total Assets"].iloc[0]
+cagr = ((ending_value / beginning_value) ** (1/years) - 1) * 100
+"""
+The price cagr for Apple (AAPL) stock is 17.08% over the past 12 months.
+"""
+
+# Print metrics
+print(f"ROI: {roi}%")
+print(f"ROE: {roe}%")
+print(f"CAGR: {cagr}%")
