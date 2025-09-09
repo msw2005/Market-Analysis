@@ -20,4 +20,4 @@ Contributions are welcome! Please open issues or pull requests for suggested imp
 [ MIT License]
 
 ## Contact
-For questions or support, please contact [Your Name or Email].
+For questions or support, please contact the owner at email :alisadiq2018@outlook.com
