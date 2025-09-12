@@ -42,7 +42,7 @@ target = df['Return10']
 # Split the data into training and test sets
 features_train, features_test, target_train, target_test = train_test_split(features, target, test_size=0.2, random_state=42)
 
-# Train a linear regression model
+# Train the linear regression model
 model = LinearRegression()
 model.fit(features_train, target_train)
 
