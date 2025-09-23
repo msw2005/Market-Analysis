@@ -55,6 +55,7 @@ print(predictions[:10])
 # Calculate metrics
 mae = mean_absolute_error(target_test, predictions)
 mse = mean_squared_error(target_test, predictions)
+#r^2 metric
 r2 = r2_score(target_test, predictions)
 
 # Print metrics
