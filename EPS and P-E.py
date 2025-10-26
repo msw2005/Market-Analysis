@@ -6,6 +6,7 @@ ticker = yf.Ticker("AAPL")
 # Get info data
 info = ticker.info
 
+
 '''
 The time period for these metrics is determined by Yahoo Finance, which provides the data. The "trailing" in "trailing P/E" and "trailing EPS" typically means
 these metrics are calculated using data from the past 12 months.
