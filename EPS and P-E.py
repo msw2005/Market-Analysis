@@ -1,6 +1,6 @@
 import yfinance as yf
 
-# Download data from the web
+# Download data from the webx
 ticker = yf.Ticker("AAPL")
 
 # Get info data
