@@ -1,6 +1,6 @@
 import yfinance as yf
 
-# Download data
+# Download datax
 ticker = yf.Ticker("AAPL")
 
 # Get financial data
@@ -11,6 +11,7 @@ info = ticker.info
 # Print balancesheet data
 for key in balancesheet.index:
     print(key)
+
 
 # Calculate ROI (Return on Investment) using EBITDA
 '''This is the return on investment, calculated as EBITDA divided by total assets. 
