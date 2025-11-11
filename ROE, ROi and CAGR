@@ -1,6 +1,6 @@
 import yfinance as yf
 
-# Download datax
+# Download dataxx
 ticker = yf.Ticker("AAPL")
 
 # Get financial data
