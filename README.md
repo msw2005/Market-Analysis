@@ -1,6 +1,6 @@
 # Market-Analysis
 
-## About
+## About the project
 Market-Analysis is a Python-based project designed to perform data analysis and insights extraction on market data. This repository contains scripts and tools to help analyze trends, patterns, and key market indicators;
 
 ## Features
