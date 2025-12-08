@@ -13,6 +13,7 @@ These libraries provide a lot of functionality for developing, testing, and opti
 '''
 # Download historical market data
 df = yf.download('AAPL', start='2020-01-01', end='2022-12-31')
+#downloaded
 
 # Calculate the percentage change
 df['Return'] = df['Close'].pct_change()
