@@ -18,7 +18,7 @@ To use this project, ensure you have Python 3.x installed. It is recommended to 
 Contributions are welcome! Please open issues or pull requests for suggested improvements or bug fixes
 
 ## License
-(MIT License)
+(MIT License):
 
 ## Contact
 For questions or support, please contact the owner at email: alisadiq2018@outlook.com
