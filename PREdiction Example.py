@@ -13,9 +13,10 @@ These libraries provide a lot of functionality for developing, testing, and opti
 '''
 # Download historical market data
 df = yf.download('AAPL', start='2020-01-01', end='2022-12-31')
+# df is the dataframe
 #downloaded
 
-# Calculate the percentage change
+# Calculate the percentage change here
 df['Return'] = df['Close'].pct_change()
 
 # Drop missing values
@@ -38,10 +39,12 @@ df = df.dropna()
 
 # Define features and target
 features = df[['Return', 'Return1', 'Return2', 'Return3', 'Return4', 'Return5', 'Return6', 'Return7', 'Return8', 'Return9']]
+# feature is the feature variable
 target = df['Return10']
 
 # Split the data into training and test sets
 features_train, features_test, target_train, target_test = train_test_split(features, target, test_size=0.2, random_state=42)
+#features_train is the split from features dataframe
 
 # Train the linear regression model
 model = LinearRegression()
@@ -55,6 +58,7 @@ print(predictions[:10])
 
 # Calculate metrics
 mae = mean_absolute_error(target_test, predictions)
+# library function from scikit
 mse = mean_squared_error(target_test, predictions)
 #r^2 metric
 r2 = r2_score(target_test, predictions)
@@ -63,3 +67,7 @@ r2 = r2_score(target_test, predictions)
 print(f"Mean Absolute Error: {mae}")
 print(f"Mean Squared Error: {mse}")
 print(f"R-squared: {r2}")
+
+
+"""
+There is no class and functions definitions here, is it?"""
