@@ -13,6 +13,8 @@ These libraries provide a lot of functionality for developing, testing, and opti
 '''
 # Download historical market data
 df = yf.download('AAPL', start='2020-01-01', end='2022-12-31')
+# the dataframe
+
 # df is the dataframe
 #downloaded
 
@@ -39,7 +41,9 @@ df = df.dropna()
 
 # Define features and target
 features = df[['Return', 'Return1', 'Return2', 'Return3', 'Return4', 'Return5', 'Return6', 'Return7', 'Return8', 'Return9']]
-# feature is the feature variable
+# feature is the feature variable in array data type
+
+# what is the difference between arrays and list?
 target = df['Return10']
 
 # Split the data into training and test sets
