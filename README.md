@@ -11,6 +11,7 @@ Market-Analysis is a Python3-based project designed to perform data analysis and
 - Generate visualizations (and reports)x
 - Support for multiple data sources (can be specified if any)
 - Modular and extendable Python codebase
+- §§
 
 ## Installation
 To use this project, ensure you have Python 3.x installed. It is recommended to use a virtual environment.saqw.
