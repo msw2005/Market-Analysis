@@ -9,7 +9,7 @@ Zipline is a Python library for backtesting trading strategies. It allows you to
 The code we've been workixng on is not similar to Zipline in that it's not designed for backtesting trading strategies etc
 Instead, it's a simple script to calculate financial metrics (ROI, ROEde, and CAGR) for a specific stock using data from Yahoo Finance.
 If you're interested in backtesting trading strategies, you might want to consider using Zipline or a similar library. 
-These libraries provide a lot of functionality for developing, testing, and optimizing trading strategies. However, they also require a good understanding of both programming and financial markets to use effectively.
+These libraries provide a lot of functionality for developing, testing, and optimizing trading strategies. However, they also require an understanding of both programming and financial markets to use effectively.
 '''
 # Download historical market data
 df = yf.download('AAPL', start='2020-01-01', end='2022-12-31')
